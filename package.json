@@ -1,0 +1,30 @@
+{
+  "name": "sst-wa-chatbot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@types/aws-lambda": "^8.10.119",
+    "aws-cdk-lib": "2.84.0",
+    "constructs": "10.1.156",
+    "sst": "^2.21.8",
+    "typescript": "^5.1.6"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "langchain": "0.0.110",
+    "node-fetch": "^3.3.1"
+  }
+}

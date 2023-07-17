@@ -1,0 +1,1 @@
+export const ToolOptions = ["Search on Google"];
